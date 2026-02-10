@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssforms.css">
+    <title>forms</title>
+</head>
+
+<body>
+    <form>
+        <br>
+        <h2>Student Form</h2>
+        <!-- Name -->
+        <label>Full Name:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <!-- Email -->
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <!-- Phone -->
+        <label>Phone Number:</label><br>
+        <input type="number" name="phone"><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <!-- Date of Birth -->
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <!-- Course -->
+        <label>Course:</label><br>
+        <select name="course">
+            <option value="">Select Course</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="IT">IT</option>
+            <option value="Business">Business</option>
+        </select>
+        <br><br>
+
+        <!-- Address -->
+        <label>Address:</label><br>
+        <textarea name="address" rows="4" cols="30"></textarea><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+    <br><br>
+    <div class="container">
+        <h2>Novell Services Login</h2>
+
+        <form>
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>City of Employment:</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Web server:</td>
+                    <td>
+                        <select>
+                            <option>-- Choose a server --</option>
+                            <option>Server 1</option>
+                            <option>Server 2</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Please specify<br>your role:</td>
+                    <td>
+                        <input type="radio" name="role"> Admin <br>
+                        <input type="radio" name="role"> Engineer <br>
+                        <input type="radio" name="role"> Manager <br>
+                        <input type="radio" name="role"> Guest
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Single Sign-on<br>to the following:</td>
+                    <td>
+                        <input type="checkbox"> Mail <br>
+                        <input type="checkbox"> Payroll <br>
+                        <input type="checkbox"> Self-service
+                    </td>
+                </tr>
+            </table>
+
+            <div class="buttons">
+                <input type="submit" value="Login">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

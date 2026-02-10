@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Position Absolute Example</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f0f0f0;
+        padding: 40px;
+    }
+
+    .box {
+        width: 400px;
+        padding: 20px;
+        background: white;
+        border: 1px solid #ccc;
+        /* position: relative; */
+    }
+
+    .tooltip {
+        position: absolute;
+        top: 10px;
+        right: 70px;
+        background: black;
+        color: white;
+        padding: 6px 10px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+
+    .content {
+        font-size: 15px;
+        color: #444;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <div class="tooltip">Info</div>
+        <div class="content">
+            Hover elements often use position: absolute.
+        </div>
+    </div>
+
+</body>
+
+</html>

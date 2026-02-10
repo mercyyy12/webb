@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            height: 150vh;
+        }
+
+        .box {
+            width: 200px;
+            height: 100px;
+            background: blue;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .relative {
+            position: relative;
+            top: 30px;
+            left: 50px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+
+        .fixed {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: red;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box relative">Relative</div>
+    <div class="box absolute">Absolute</div>
+    <div class="box fixed">Fixed</div>
+    <h1 class="sticky">Sticky Header</h1>
+
+</body>
+
+</html>
